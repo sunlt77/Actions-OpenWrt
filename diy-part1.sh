@@ -13,7 +13,3 @@
 # 移除openwrt feeds过时的luci版本
 rm -rf feeds/luci/applications/luci-app-passwall
 git clone https://github.com/Openwrt-Passwall/openwrt-passwall package/passwall-luci
-
-# 移除openwrt feeds过时的luci版本
-rm -rf ./feeds/packages/net/smartdns
-git clone https://github.com/pymumu/openwrt-smartdns.git ./package/smartdns
