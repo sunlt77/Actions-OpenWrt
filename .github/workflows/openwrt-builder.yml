@@ -16,6 +16,10 @@ on:
   repository_dispatch:
   workflow_dispatch:
 
+permissions:
+  contents: write    # 允许删除/创建 Releases 和 Tags
+  actions: write     # 允许删除旧的 Artifacts 缓存
+
 env:
   REPO_URL: https://github.com/immortalwrt/immortalwrt
   REPO_BRANCH: master
